@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "npm run clean && node ./server.mjs",
     "build": "npm run clean && vite build && vite build --ssr",
-    "start": "cross-env NODE_ENV=production node ./server.mjs",
+    "start": "cross-env NODE_ENV=production node server.mjs",
     "typecheck": "tsc",
     "lint": "eslint .",
     "format": "prettier --write .",
@@ -18,12 +18,14 @@
     "@remix-run/express": "^2.3.1",
     "@remix-run/node": "2.3.1",
     "@remix-run/react": "2.3.1",
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "isbot": "^3.7.1",
     "react": "18.3.0-canary-593ecee66-20231114",
     "react-dom": "18.3.0-canary-593ecee66-20231114"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.11",
     "@remix-run/dev": "2.3.1",
     "@remix-run/eslint-config": "2.3.1",
     "@types/eslint": "^8.44.8",
@@ -32,7 +34,6 @@
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
-    "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.0",
