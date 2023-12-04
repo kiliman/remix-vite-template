@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <div className="flex p-8 gap-8 items-baseline bg-blue-300">
+      <div className="flex items-baseline gap-8 bg-blue-300 p-8">
         <img
           src="/images/Remix-Logo-Full-Black.svg"
           alt="Remix Logo"
