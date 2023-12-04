@@ -54,5 +54,10 @@
   "overrides": {
     "react": "$react",
     "react-dom": "$react-dom"
-  }
+  },
+  "eslintIgnore": [
+    "/node_modules",
+    "/build",
+    "/public/build"
+  ]
 }
