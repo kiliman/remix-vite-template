@@ -1,0 +1,46 @@
+{
+  "name": "remix-vite-template",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --ssr",
+    "clean": "rm -rf build public/build",
+    "dev": "vite dev",
+    "nuke": "npm run clean && rm -rf node_modules package-lock.json && npm i",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/css-bundle": "2.2.0",
+    "@remix-run/node": "2.2.0",
+    "@remix-run/react": "2.2.0",
+    "@remix-run/serve": "2.2.0",
+    "isbot": "^3.6.8",
+    "react": "18.3.0-canary-593ecee66-20231114",
+    "react-dom": "18.3.0-canary-593ecee66-20231114"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "2.2.0",
+    "@remix-run/eslint-config": "2.2.0",
+    "@types/morgan": "^1.9.7",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.38.0",
+    "morgan": "^1.10.0",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.1.6",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
+  }
+}
