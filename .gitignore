@@ -5,3 +5,5 @@ node_modules
 /public/build
 .env
 /coverage
+/playwright-report
+/test-results
