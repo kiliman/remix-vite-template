@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "validate": "run-p \"test -- --run\" lint typecheck",
+    "coverage": "vitest run --coverage",
     "clean": "rm -rf build public/build",
     "nuke": "npm run clean && rm -rf node_modules package-lock.json && npm i"
   },
@@ -40,6 +41,7 @@
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.0.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
