@@ -10,14 +10,15 @@
     "resolveJsonModule": true,
     "target": "ES2022",
     "strict": true,
+    "noImplicitAny": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./app/*"]
     },
-
-    // Remix takes care of building everything in `remix build`.
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
     "noEmit": true
   }
 }

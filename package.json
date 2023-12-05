@@ -7,9 +7,11 @@
     "dev": "npm run clean && node ./server.mjs",
     "build": "npm run clean && vite build && vite build --ssr",
     "start": "cross-env NODE_ENV=production node server.mjs",
+    "test": "vitest",
     "typecheck": "tsc",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "validate": "run-p \"test -- --run\" lint typecheck",
     "clean": "rm -rf build public/build",
     "nuke": "npm run clean && rm -rf node_modules package-lock.json && npm i"
   },
@@ -39,6 +41,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "morgan": "^1.10.0",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.32",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.8",
@@ -46,7 +49,8 @@
     "tailwindcss": "^3.3.6",
     "typescript": "5.1.6",
     "vite": "^5.0.5",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^1.0.1"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -56,8 +60,8 @@
     "react-dom": "$react-dom"
   },
   "eslintIgnore": [
-    "/node_modules",
-    "/build",
-    "/public/build"
+    "node_modules",
+    "build",
+    "public/build"
   ]
 }
