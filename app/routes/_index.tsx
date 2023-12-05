@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import { Link } from '@remix-run/react'
 
 export const meta: MetaFunction = () => {
   return [
@@ -7,6 +8,7 @@ export const meta: MetaFunction = () => {
   ]
 }
 
+const linkStyle = 'underline decoration-dotted'
 export default function Index() {
   return (
     <div>
@@ -21,8 +23,13 @@ export default function Index() {
       <div className="p-8">
         <ul className="flex flex-col gap-2">
           <li>
+            <Link to="/counter" className={linkStyle}>
+              Counter
+            </Link>
+          </li>
+          <li>
             <a
-              className="underline decoration-dotted"
+              className={linkStyle}
               target="_blank"
               href="https://remix.run/tutorials/blog"
               rel="noreferrer"
@@ -32,7 +39,7 @@ export default function Index() {
           </li>
           <li>
             <a
-              className="underline decoration-dotted"
+              className={linkStyle}
               target="_blank"
               href="https://remix.run/tutorials/jokes"
               rel="noreferrer"
@@ -42,7 +49,7 @@ export default function Index() {
           </li>
           <li>
             <a
-              className="underline decoration-dotted"
+              className={linkStyle}
               target="_blank"
               href="https://remix.run/docs"
               rel="noreferrer"

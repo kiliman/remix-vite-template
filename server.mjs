@@ -5,7 +5,7 @@ import express from 'express'
 // @remix-run/dev module is only available in development
 let remixDev
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV !== 'production') {
   remixDev = await import('@remix-run/dev')
 }
 
