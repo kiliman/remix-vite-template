@@ -1,9 +1,17 @@
-# remix-vite-2.2.0
+# remix-vite-template
 
-This repo uses the unstable Vite support from Remix v2.2.0.
+Includes the following configuration:
 
-This template also creates a simple Vite plugin to enable HTTP logging via `morgan`.
-I've also configured TailwindCSS using `postcss` as described in the documentation.
+- Remix v2
+- Vite v5 (Remix unstable support)
+- Prettier
+- ESlint
+- React 18.3 canary version to prevent hydration issues
+- Tailwind CSS
+- `remix-flat-routes` with _hybrid_ routing
+- Vitest with unit testing and Remix routes test (`createRemixStub`)
+- Playwright E2E testing
+- Fly.io
+- GitHub Action for deployments
 
-In order for HMR to work, we need to resolve the React hydration errors. I did
-this by installing the React 18.3 Canary version.
+Portions of the setup was borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
