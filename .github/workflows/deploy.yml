@@ -139,7 +139,7 @@ jobs:
 
   deploy:
     name: 🚀 Deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [lint, typecheck, vitest, playwright]
     # only build/deploy main branch on pushes
     if:
@@ -176,7 +176,6 @@ jobs:
 
       - name: 🚀 Deploy Production
         if: ${{ github.ref == 'refs/heads/main' }}
-        run: flyctl deploy --remote-only
-        # --build-arg COMMIT_SHA=${{ github.sha }}
+        run: flyctl deploy --remote-only --build-arg COMMIT_SHA=${{ github.sha }}
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
