@@ -32,7 +32,7 @@ The following configuration files are used:
 
 - vitest.config.js
 
-It will run all tests in the _app_ folder.
+It will run all tests in the `app` folder.
 
 ### Setup
 
@@ -44,7 +44,7 @@ The following setup file are used:
 > The _setup-test-env.ts_ script imports `@testing-library/jest-dom/vitest`
 > which will automatically extent the vitest `expect` with additional matchers.
 
-### Playwright
+## Playwright Configuration
 
 Playwright is used for automated end-to-end tests.
 
@@ -61,7 +61,7 @@ The following scripts are added to _package.json_
 - `test:e2e` - run e2e in silent mode
 - `test:e2e:dev` - run e2e with Playwright UI
 - `pretest:e2e:run` - builds the app
-- `test:e2e:run` - run e2e with `CI=1``
+- `test:e2e:run` - run e2e with `CI=1`
 - `test:e2e:install` - installs playwright browser images
 - `validate` - runs e2e in run mode `CI=1`
 
@@ -77,4 +77,4 @@ The following configuration files are used:
 The config file uses the environment variable `CI` to determine if it should use
 mocks or not, in addition to some other parameters.
 
-It will run all tests in the _tests/e2e_ folder.
+It will run all tests in the `tests/e2e` folder.
