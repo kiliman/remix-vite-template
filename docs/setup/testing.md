@@ -21,7 +21,7 @@ The following packages are added:
 
 ### Scripts
 
-The following scripts are added to _package.json_
+The following scripts are added to _package.json_:
 
 - `test` - run vitest in _watch_ mode
 - `validate` - runs vitest in _run_ mode
