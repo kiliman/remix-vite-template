@@ -5,7 +5,7 @@ export default {
   serverModuleFormat: 'esm',
   routes: async defineRoutes => {
     return flatRoutes('routes', defineRoutes, {
-      ignoredRouteFiles: ['**/*.test.{js,jsx,ts,tsx}'],
+      ignoredRouteFiles: ['**/*.test.{js,jsx,ts,tsx}', '**/__*.*'],
     })
   },
 }
