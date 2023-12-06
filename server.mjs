@@ -1,6 +1,7 @@
 import { createRequestHandler } from '@remix-run/express'
 import { installGlobals } from '@remix-run/node'
 import express from 'express'
+import morgan from 'morgan'
 
 // @remix-run/dev module is only available in development
 let remixDev
@@ -22,6 +23,7 @@ const app = express()
 if (vite) {
   app.use(vite.middlewares)
 } else {
+  app.use(morgan('tiny'))
   app.use(
     '/build',
     express.static('public/build', { immutable: true, maxAge: '1y' }),
