@@ -14,4 +14,6 @@ Includes the following configuration:
 - Fly.io
 - GitHub Action for deployments
 
-Portions of the setup was borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
+Portions of the setup were borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
+
+See the [`docs`](./docs) folder on usage and setup information.
