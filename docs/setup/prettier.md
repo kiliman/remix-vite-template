@@ -10,8 +10,6 @@ The following packages are added:
 - `prettier-plugin-tailwindcss`
 - `eslint-config-prettier`
 
-> Notes
-
 ### Scripts
 
 The following scripts are added to _package.json_:

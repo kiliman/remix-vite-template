@@ -14,8 +14,6 @@ The following dev packages are added:
 - `@types/eslint`
 - `@remix-run/eslint-config`
 
-> Notes
-
 ### Scripts
 
 The following scripts are added to _package.json_:

@@ -29,7 +29,7 @@ The following files are added:
 - app/tailwind.css
 
 > The _tailwind.css_ file contains the tailwind directives. The Vite compiler
-> will automatically build the final tailwind.css file
+> will automatically build the final _tailwind.css_ file
 
 The following files are updated:
 
@@ -43,6 +43,6 @@ The following files are updated:
 - ]
 ```
 
-> Unlike non-Vite Remix, we are importing the _app/tailwind.css_ for module side-
-> effects. Vite will generate the tailwind.css file and include the `<link>`
+> Unlike non-Vite Remix, we are importing the _app/tailwind.css_ for module
+> side-effects. Vite will generate the _tailwind.css_ file and include the `<link>`
 > component automatically.

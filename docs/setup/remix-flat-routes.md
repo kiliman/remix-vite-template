@@ -1,7 +1,8 @@
 # `remix-flat-routes` Setup
 
 Remix v2 defaults to using the flat-routes convention. This package extends the
-`v2` convention to support _hybrid_ routes, extended route filenames,
+`v2` convention to support _hybrid_ routes, extended route filenames, custom
+param prefix, etc.
 
 ### Packages
 
