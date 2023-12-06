@@ -20,7 +20,8 @@
     "test:e2e:run": "cross-env CI=true playwright test",
     "test:e2e:install": "npx playwright install --with-deps chromium",
     "clean": "rm -rf build public/build",
-    "nuke": "npm run clean && rm -rf node_modules package-lock.json && npm i"
+    "nuke": "npm run clean && rm -rf node_modules package-lock.json && npm i",
+    "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64"
   },
   "dependencies": {
     "@playwright/test": "^1.40.1",
