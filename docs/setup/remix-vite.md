@@ -2,6 +2,8 @@
 
 Remix v2.2+ introduced Vite support as an unstable plugin.
 
+https://remix.run/docs/en/main/future/vite
+
 # Installation
 
 ```bash

@@ -14,12 +14,22 @@ The following dev packages are added:
 - `@types/eslint`
 - `@remix-run/eslint-config`
 
+Adds `"eslintIgnore"` to _package.json_
+
+```json
+  "eslintIgnore": [
+    "node_modules",
+    "build",
+    "public/build"
+  ]
+```
+
 ### Scripts
 
 The following scripts are added to _package.json_:
 
 - `lint` - runs `eslint` on all files
-- `validate` - runs `eslint`, including test typchecking, etc
+- `validate` - runs `eslint`, including test, typechecking, etc.
 
 ### Configuration
 
