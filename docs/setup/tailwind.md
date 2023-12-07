@@ -11,7 +11,7 @@ The following packages are added:
 - `autoprefixer`
 - `prettier-plugin-tailwindcss`
 
-> The `prettier` plugin is included to sort class names in a consistent way.
+The `prettier` plugin is included to sort class names in a consistent way.
 
 ### Configuration
 
@@ -20,7 +20,7 @@ The following configuration files are used:
 - tailwind.config.js
 - postcss.config.js
 
-> Update the _tailwind.config.js_ file as needed for content, themes, etc.
+Update the _tailwind.config.js_ file as needed for content, themes, etc.
 
 ### Setup
 
@@ -28,8 +28,8 @@ The following files are added:
 
 - app/tailwind.css
 
-> The _tailwind.css_ file contains the tailwind directives. The Vite compiler
-> will automatically build the final _tailwind.css_ file
+The _tailwind.css_ file contains the tailwind directives. The Vite compiler
+will automatically build the final _tailwind.css_ file
 
 The following files are updated:
 
@@ -43,6 +43,6 @@ The following files are updated:
 - ]
 ```
 
-> Unlike non-Vite Remix, we are importing the _app/tailwind.css_ for module
-> side-effects. Vite will generate the _tailwind.css_ file and include the `<link>`
-> component automatically.
+Unlike non-Vite Remix, we are importing the _app/tailwind.css_ for module
+side-effects. Vite will generate the _tailwind.css_ file and include the `<link>`
+component automatically.

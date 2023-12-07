@@ -36,15 +36,15 @@ The following configuration files are used:
 
 - .eslintrc.cjs
 
-> The default configuration extends `@remix-run/eslint-config`. It also includes
-> the `prettier` config which disables the formatting rules that we want `prettier`
-> to use.
+The default configuration extends `@remix-run/eslint-config`. It also includes
+the `prettier` config which disables the formatting rules that we want `prettier`
+to use.
 
-> In addition, I've added rules to sort imports consistently. This ensures that
-> code that is modified by others will not have spurious changes that will bloat
-> the diff.
+In addition, I've added rules to sort imports consistently. This ensures that
+code that is modified by others will not have spurious changes that will bloat
+the diff.
 
-> It also includes rules for `testing-library`.
+It also includes rules for `testing-library`.
 
 ### Recommendations
 

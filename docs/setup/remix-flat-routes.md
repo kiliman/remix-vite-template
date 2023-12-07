@@ -16,11 +16,11 @@ The following configuration files are updated:
 
 - remix.config.js
 
-> Remix supports custom routes via the `routes` property. First we need to tell
-> Remix to ignore all files in the `routes` folder, so Remix won't process them
-> using the `v2` convention.
->
-> We call `flatRoutes` and ignore all the test files/folders.
+Remix supports custom routes via the `routes` property. First we need to tell
+Remix to ignore all files in the `routes` folder, so Remix won't process them
+using the `v2` convention.
+
+We call `flatRoutes` and ignore all the test files/folders.
 
 ```diff
 +  import { flatRoutes } from 'remix-flat-routes'
