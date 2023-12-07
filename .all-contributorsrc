@@ -1,0 +1,21 @@
+{
+  "projectName": "remix-vite-template",
+  "projectOwner": "kiliman",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "kiliman",
+      "name": "Michael Carter",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47168?v=4",
+      "profile": "https://kiliman.dev/",
+      "contributions": ["code", "doc"]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}

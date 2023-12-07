@@ -21,7 +21,9 @@
     "test:e2e:install": "npx playwright install --with-deps chromium",
     "clean": "rimraf build public/build",
     "nuke": "npm run clean && rimraf node_modules package-lock.json && npm i",
-    "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64"
+    "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
     "@remix-run/css-bundle": "2.3.1",
@@ -50,6 +52,7 @@
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.0.1",
+    "all-contributors-cli": "^6.26.1",
     "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
