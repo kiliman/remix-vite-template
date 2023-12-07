@@ -24,21 +24,19 @@
     "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64"
   },
   "dependencies": {
-    "@playwright/test": "^1.40.1",
     "@remix-run/css-bundle": "2.3.1",
     "@remix-run/express": "^2.3.1",
     "@remix-run/node": "2.3.1",
     "@remix-run/react": "2.3.1",
-    "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "isbot": "^3.7.1",
     "react": "18.3.0-canary-640ccebb7-20231201",
-    "react-dom": "18.3.0-canary-640ccebb7-20231201",
-    "rimraf": "^5.0.5"
+    "react-dom": "18.3.0-canary-640ccebb7-20231201"
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.4.11",
+    "@playwright/test": "^1.40.1",
     "@remix-run/dev": "2.3.1",
     "@remix-run/eslint-config": "2.3.1",
     "@remix-run/testing": "^2.3.1",
@@ -53,6 +51,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.0.1",
     "autoprefixer": "^10.4.16",
+    "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.0",
@@ -64,6 +63,7 @@
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.8",
     "remix-flat-routes": "^0.6.4",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.6",
     "typescript": "5.1.6",
     "vite": "^5.0.5",
