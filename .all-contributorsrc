@@ -3,7 +3,9 @@
   "projectOwner": "kiliman",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
   "commitConvention": "none",
@@ -13,7 +15,20 @@
       "name": "Michael Carter",
       "avatar_url": "https://avatars.githubusercontent.com/u/47168?v=4",
       "profile": "https://kiliman.dev/",
-      "contributions": ["code", "doc"]
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "HubbardJacob",
+      "name": "Jacob Hubbard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48691238?v=4",
+      "profile": "https://github.com/HubbardJacob",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
