@@ -9,7 +9,6 @@ The following dev packages are added:
 
 - `eslint`
 - `eslint-config-prettier`
-- `eslint-plugin-import`
 - `eslint-plugin-simple-import-sort`
 - `@types/eslint`
 - `@remix-run/eslint-config`
