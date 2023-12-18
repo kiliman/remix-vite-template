@@ -24,7 +24,13 @@ installGlobals()
 let vite =
   process.env.NODE_ENV === 'production'
     ? undefined
-    : await remixDev.unstable_createViteServer()
+    : await import('vite').then(({ createServer }) =>
+        createServer({
+          server: {
+            middlewareMode: true,
+          },
+        }),
+      )
 
 const app = express()
 
@@ -36,19 +42,19 @@ if (vite) {
   // dev uses morgan plugin, otherwise it spams the console with HMR requests
   app.use(morgan('tiny'))
   app.use(
-    '/build',
-    express.static('public/build', { immutable: true, maxAge: '1y' }),
+    '/assets',
+    express.static('build/client/assets', { immutable: true, maxAge: '1y' }),
   )
 }
-app.use(express.static('public', { maxAge: '1h' }))
+app.use(express.static('build/client', { maxAge: '1h' }))
 
 // handle SSR requests
 app.all(
   '*',
   createRequestHandler({
     build: vite
-      ? () => remixDev.unstable_loadViteServerBuild(vite)
-      : await import('./build/index.js'),
+      ? () => vite.ssrLoadModule(remixDev.unstable_viteServerBuildModuleId)
+      : await import('./build/server/index.js'),
   }),
 )
 

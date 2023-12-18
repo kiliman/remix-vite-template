@@ -19,7 +19,7 @@
     "pretest:e2e:run": "npm run build",
     "test:e2e:run": "cross-env CI=true playwright test",
     "test:e2e:install": "npx playwright install --with-deps chromium",
-    "clean": "rimraf build public/build",
+    "clean": "rimraf build",
     "nuke": "npm run clean && rimraf node_modules package-lock.json && npm i",
     "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64",
     "contributors:add": "all-contributors add",
