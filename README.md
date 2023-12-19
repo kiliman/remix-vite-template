@@ -1,9 +1,7 @@
 # remix-vite-template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Includes the following configuration:
@@ -36,6 +34,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://kiliman.dev/"><img src="https://avatars.githubusercontent.com/u/47168?v=4?s=100" width="100px;" alt="Michael Carter"/><br /><sub><b>Michael Carter</b></sub></a><br /><a href="https://github.com/kiliman/remix-vite-template/commits?author=kiliman" title="Code">💻</a> <a href="https://github.com/kiliman/remix-vite-template/commits?author=kiliman" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/HubbardJacob"><img src="https://avatars.githubusercontent.com/u/48691238?v=4?s=100" width="100px;" alt="Jacob Hubbard"/><br /><sub><b>Jacob Hubbard</b></sub></a><br /><a href="https://github.com/kiliman/remix-vite-template/commits?author=HubbardJacob" title="Code">💻</a> <a href="https://github.com/kiliman/remix-vite-template/commits?author=HubbardJacob" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AlemTuzlak"><img src="https://avatars.githubusercontent.com/u/18480956?v=4?s=100" width="100px;" alt="Alem Tuzlak"/><br /><sub><b>Alem Tuzlak</b></sub></a><br /><a href="https://github.com/kiliman/remix-vite-template/commits?author=AlemTuzlak" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
