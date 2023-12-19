@@ -1,7 +1,9 @@
 # remix-vite-template
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Includes the following configuration:
@@ -17,12 +19,13 @@ Includes the following configuration:
 - Playwright E2E testing
 - Fly.io
 - GitHub Action for deployments
+- Remix Dev Tools
 
 Portions of the setup were borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
 
 See the [`docs`](./docs) folder on usage and setup information.
 
-## Contributors ✨
+## Contributors 😍
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
