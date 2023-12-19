@@ -3,9 +3,15 @@ import morgan from 'morgan'
 import { defineConfig, type ViteDevServer } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import remixConfig from './remix.config'
+import { remixDevTools } from 'remix-development-tools/vite'
 
 export default defineConfig({
-  plugins: [morganPlugin(), remix(remixConfig), tsconfigPaths()],
+  plugins: [
+    morganPlugin(),
+    remix(remixConfig),
+    remixDevTools(),
+    tsconfigPaths(),
+  ],
 })
 
 function morganPlugin() {
