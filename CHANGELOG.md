@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.2.1
+
+- 🔨 Update import type annotation in remix.config.js (#3)
+- 🎭 Add lint:fix script
+
 ## v1.2.0
 
 - 📦 Add Remix Development Tools (#2)
