@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.3.0
+
+- 📦 Update to Remix v2.4.1 and fix breaking changes
+- 📦 Update to latest packages
+- 🔨 Add entry.server/entry.client files due to `isbot` update
+
 ## v1.2.1
 
 - 🔨 Update import type annotation in remix.config.js (#3)
