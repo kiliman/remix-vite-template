@@ -7,16 +7,16 @@ import morgan from 'morgan'
 
 const start = Date.now()
 
-// @remix-run/dev module is only available in development
-let remixDev
 let viteVersion
-
+let remixVersion
 if (process.env.NODE_ENV !== 'production') {
   // get the vite version from the vite package.json
   viteVersion = JSON.parse(
     fs.readFileSync('node_modules/vite/package.json'),
   ).version
-  remixDev = await import('@remix-run/dev')
+  remixVersion = JSON.parse(
+    fs.readFileSync('node_modules/@remix-run/dev/package.json'),
+  ).version
 }
 
 installGlobals()
@@ -53,7 +53,7 @@ app.all(
   '*',
   createRequestHandler({
     build: vite
-      ? () => vite.ssrLoadModule(remixDev.unstable_viteServerBuildModuleId)
+      ? () => vite.ssrLoadModule('virtual:remix/server-build')
       : await import('./build/server/index.js'),
   }),
 )
@@ -70,6 +70,8 @@ app.listen(port, '0.0.0.0', () => {
     console.log(
       `  ${chalk.greenBright.bold('VITE')} ${chalk.green(
         `v${viteVersion}`,
+      )} ${chalk.blueBright.bold('Remix')} ${chalk.blue(
+        `v${remixVersion}`,
       )} ready in ${chalk.bold(elapsed)} ms`,
     )
     console.log()
@@ -78,9 +80,6 @@ app.listen(port, '0.0.0.0', () => {
         'http://localhost:' + port,
       )}`,
     )
-    console.log()
-    console.log(`  ${chalk.yellow('⚠️  Remix support for Vite is unstable')}`)
-    console.log(`  ${chalk.yellow('   and not recommended for production')}`)
     console.log()
   }
 })
