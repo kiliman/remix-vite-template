@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.4.0
+
+- 📦 Update to Remix v2.5.0
+- 📦 Update to latest packages
+- 📦 Update to latest React canary
+
 ## v1.3.0
 
 - 📦 Update to Remix v2.4.1 and fix breaking changes
