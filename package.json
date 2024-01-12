@@ -38,8 +38,8 @@
     "express": "^4.18.2",
     "isbot": "^4.3.0",
     "morgan": "^1.10.0",
-    "react": "18.3.0-canary-c5b937576-20231219",
-    "react-dom": "18.3.0-canary-c5b937576-20231219",
+    "react": "18.3.0-canary-6639ed3b3-20240111",
+    "react-dom": "18.3.0-canary-6639ed3b3-20240111",
     "remix-typedjson": "^0.4.1"
   },
   "devDependencies": {
@@ -81,8 +81,8 @@
     "node": ">=20.0.0"
   },
   "overrides": {
-    "react": "18.3.0-canary-c5b937576-20231219",
-    "react-dom": "18.3.0-canary-c5b937576-20231219"
+    "react": "18.3.0-canary-6639ed3b3-20240111",
+    "react-dom": "18.3.0-canary-6639ed3b3-20240111"
   },
   "eslintIgnore": [
     "node_modules",
