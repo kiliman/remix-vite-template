@@ -8,7 +8,7 @@
 
 Includes the following configuration:
 
-- Remix v2.4
+- Remix v2.5
 - Vite v5 (Remix unstable support)
 - Prettier
 - ESlint
