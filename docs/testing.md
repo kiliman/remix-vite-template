@@ -1,6 +1,6 @@
 # Testing
 
-For how to setup testing, see [Testing Setup](./setup/testing.md)
+For how to setup testing, see [Vitest Setup](./setup/vitest.md) and [Playwright Setup](./setup/playwright.md)
 
 This document describes how to write unit tests, Remix route component tests,
 and End-to-End tests with Playwright.
