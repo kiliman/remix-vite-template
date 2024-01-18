@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.4.2
+
+- 📦 Update to Playwright v1.41.0 (Update to Node v20.11.0)
+- 🙈 Add .eslintignore
+
 ## v1.4.1
 
 - 📦 Update to Remix v2.5.1
