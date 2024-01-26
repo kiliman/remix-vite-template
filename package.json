@@ -34,10 +34,8 @@
     }
   },
   "lint-staged": {
-    "./tests/**/*.{js,jsx,ts,tsx}": [
-      "npm run test"
-    ],
-    "./(app+tests)/**/*.+(ts|js)": [
+    "./*.+(ts|js)": [
+      "npm run test",
       "npm run lint",
       "npm run format",
       "npm run build"
