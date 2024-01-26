@@ -4,3 +4,4 @@
 
 npm run pretest
 npx lint-staged
+npm run build
