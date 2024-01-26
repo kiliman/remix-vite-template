@@ -34,10 +34,12 @@
     }
   },
   "lint-staged": {
-    "./app/**/*.+(ts|js)": [
+    "./tests/**/*.{js,jsx,ts,tsx}": [
+      "npm run test"
+    ],
+    "./(app+tests)/**/*.+(ts|js)": [
       "npm run lint",
       "npm run format",
-      "npm run validate",
       "npm run build"
     ]
   },
@@ -52,6 +54,7 @@
     "express": "^4.18.2",
     "isbot": "^4.4.0",
     "morgan": "^1.10.0",
+    "prisma-fns": "^1.1.5",
     "react": "18.3.0-canary-b30030471-20240117",
     "react-dom": "18.3.0-canary-b30030471-20240117",
     "remix-typedjson": "^0.4.1"
