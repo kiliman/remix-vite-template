@@ -25,7 +25,21 @@
     "nuke": "npm run clean && rimraf node_modules package-lock.json && npm i",
     "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./app/**/*.+(ts|js)": [
+      "npm run lint",
+      "npm run format",
+      "npm run validate",
+      "npm run build"
+    ]
   },
   "dependencies": {
     "@remix-run/css-bundle": "2.5.1",
@@ -63,7 +77,9 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^9.0.6",
     "jsdom": "^23.2.0",
+    "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.33",
     "prettier": "^3.2.4",
