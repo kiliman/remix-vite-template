@@ -10,6 +10,7 @@
     "start": "cross-env NODE_ENV=production node ./server.mjs",
     "start:mocks": "cross-env NODE_ENV=production MOCKS=true node server.mjs",
     "test": "vitest",
+    "pretest": "vitest run",
     "typecheck": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -34,8 +35,7 @@
     }
   },
   "lint-staged": {
-    "./*.+(ts|js)": [
-      "npm run test",
+    "./app/**/*.+(ts|js)": [
       "npm run lint",
       "npm run format",
       "npm run build"
