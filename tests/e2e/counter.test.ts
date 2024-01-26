@@ -7,5 +7,3 @@ test('counter test', async ({ page }) => {
   const button = await page.getByRole('button', { name: /Count/i })
   expect(await button.textContent()).toBe('Count: 1')
 })
-
-// asdf
