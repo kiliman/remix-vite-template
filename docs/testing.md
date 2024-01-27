@@ -71,10 +71,10 @@ Each route needs an entry.
 
 ```ts
 type StubRouteObject = {
-  path: string,
-  Component: React.ComponentType,
-  loader?: LoaderFunction,
-  action?: ActionFunction,
+  path: string
+  Component: React.ComponentType
+  loader?: LoaderFunction
+  action?: ActionFunction
 }
 ```
 

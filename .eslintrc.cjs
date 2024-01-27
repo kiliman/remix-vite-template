@@ -26,6 +26,8 @@ module.exports = {
     ],
     'simple-import-sort/exports': 'warn',
     'import/no-duplicates': ['warn', { 'prefer-inline': true }],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-uses-react': 'off',
   },
   overrides: [
     {

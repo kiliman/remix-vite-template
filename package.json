@@ -10,6 +10,7 @@
     "start": "cross-env NODE_ENV=production node ./server.mjs",
     "start:mocks": "cross-env NODE_ENV=production MOCKS=true node server.mjs",
     "test": "vitest",
+    "pretest": "vitest run",
     "typecheck": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -25,7 +26,20 @@
     "nuke": "npm run clean && rimraf node_modules package-lock.json && npm i",
     "act": "doppler run -- act -s FLY_API_TOKEN --container-architecture linux/amd64",
     "contributors:add": "all-contributors add",
-    "contributors:generate": "all-contributors generate"
+    "contributors:generate": "all-contributors generate",
+    "prepare": "husky"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./app/**/*.+(ts|js|jsx|tsx)": [
+      "npm run lint",
+      "npm run format",
+      "npm run clean && remix vite:build"
+    ]
   },
   "dependencies": {
     "@remix-run/css-bundle": "2.5.1",
@@ -38,6 +52,7 @@
     "express": "^4.18.2",
     "isbot": "^4.4.0",
     "morgan": "^1.10.0",
+    "prisma-fns": "^1.1.5",
     "react": "18.3.0-canary-b30030471-20240117",
     "react-dom": "18.3.0-canary-b30030471-20240117",
     "remix-typedjson": "^0.4.1"
@@ -63,7 +78,9 @@
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^9.0.6",
     "jsdom": "^23.2.0",
+    "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.33",
     "prettier": "^3.2.4",
