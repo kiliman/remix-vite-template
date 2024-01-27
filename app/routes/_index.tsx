@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
     { name: 'description', content: 'Welcome to Remix!' },
   ]
 }
-
+// test
 const linkStyle = 'underline decoration-dotted'
 export default function Index() {
   return (
