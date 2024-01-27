@@ -34,7 +34,6 @@ Added following to pre-commit file in .husky
 
 npm run pretest
 npx lint-staged
-npm run build
 ```
 
 We will now add the following to script to package.json
@@ -52,7 +51,8 @@ We will now add the following to script to package.json
     "lint-staged": {
       "./app/**/*.+(ts|js)": [
         "npm run lint",
-        "npm run format"
+        "npm run format",
+        "npm run clean && remix vite:build"
       ]
     }
   }
