@@ -35,13 +35,10 @@
     }
   },
   "lint-staged": {
-    "./app/**/*.+(ts|js|jsx|tsx)": [
+    "./app/**/*.(js,jsx,ts,tsx)": [
       "npm run lint",
       "npm run format",
       "npm run clean && remix vite:build"
-    ],
-    "./tests/**/*": [
-      "npm run pretest"
     ]
   },
   "dependencies": {

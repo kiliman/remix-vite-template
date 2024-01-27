@@ -11,5 +11,3 @@ const db = singleton('db', () => ({
 }))
 
 export { db }
-
-//
