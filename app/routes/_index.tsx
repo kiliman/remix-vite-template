@@ -8,8 +8,6 @@ export const meta: MetaFunction = () => {
   ]
 }
 
-// test for build 2
-
 const linkStyle = 'underline decoration-dotted'
 export default function Index() {
   return (
