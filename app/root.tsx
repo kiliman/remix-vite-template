@@ -1,7 +1,6 @@
 import './tailwind.css'
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -20,7 +19,6 @@ export default function App() {
       <body suppressHydrationWarning>
         <Outlet />
         <ScrollRestoration />
-        <LiveReload />
         <Scripts />
       </body>
     </html>

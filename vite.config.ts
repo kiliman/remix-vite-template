@@ -6,11 +6,12 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import remixConfig from './remix.config'
 
 export default defineConfig({
+  build: { manifest: true },
   plugins: [
     morganPlugin(),
-    remix(remixConfig),
     remixDevTools(),
     tsconfigPaths(),
+    remix(remixConfig),
   ],
 })
 
