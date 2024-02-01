@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.4.3
+
+- 📦 Update to Remix v2.6.0
+- 📦 Update to latest packages
+- 📦 Update to latest React canary
+
 ## v1.4.2
 
 - 📦 Update to Playwright v1.41.0 (Update to Node v20.11.0)
