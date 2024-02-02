@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.4.4
+
+- 🔨 Update import type annotation in remix.config.js (#5)
+
 ## v1.4.3
 
 - 📦 Update to Remix v2.6.0
