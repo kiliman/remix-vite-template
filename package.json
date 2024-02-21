@@ -29,9 +29,9 @@
     "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
-    "@remix-run/express": "2.7.0-pre.3",
-    "@remix-run/node": "2.7.0-pre.3",
-    "@remix-run/react": "2.7.0-pre.3",
+    "@remix-run/express": "^2.7.1",
+    "@remix-run/node": "^2.7.1",
+    "@remix-run/react": "^2.7.1",
     "chalk": "^5.3.0",
     "clsx": "^2.1.0",
     "cross-env": "^7.0.3",
@@ -41,15 +41,15 @@
     "morgan": "^1.10.0",
     "react": "18.3.0-canary-a515d753b-20240220",
     "react-dom": "18.3.0-canary-a515d753b-20240220",
-    "remix-typedjson": "^0.4.1"
+    "remix-typedjson": "^0.4.1",
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.5.2",
     "@playwright/test": "^1.41.2",
-    "@remix-run/dev": "2.7.0-pre.3",
-    "@remix-run/eslint-config": "2.7.0-pre.3",
-    "@remix-run/testing": "2.7.0-pre.3",
+    "@remix-run/dev": "^2.7.1",
+    "@remix-run/eslint-config": "^2.7.1",
+    "@remix-run/testing": "^2.7.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -81,7 +81,7 @@
     "tailwindcss": "^3.4.1",
     "tsx": "^4.7.1",
     "typescript": "5.1.6",
-    "vite": "^5.1.3",
+    "vite": "^5.1.4",
     "vite-tsconfig-paths": "^4.3.1",
     "vitest": "^1.3.1"
   },

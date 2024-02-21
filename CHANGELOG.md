@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.5.0
+
+- 📦 Update to Remix v2.7.1 (first Vite stable support)
+- 📦 Update to latest packages including React canary
+- 🔨 Update from unstable_vitePlugin
+- ✨ Add SVG sprite icons
+- ✨ Add tailwind helper functions
+- ✨ Add Icon component that supports SVG sprite
+- ✨ Add default error boundary and helper functions
+
 ## v1.4.4
 
 - 🔨 Update import type annotation in remix.config.js (#5)

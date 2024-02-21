@@ -8,8 +8,8 @@
 
 Includes the following configuration:
 
-- Remix v2.6
-- Vite v5 (Remix unstable support)
+- Remix v2.7 (first stable Vite release)
+- Vite v5.1
 - Prettier
 - ESlint
 - React 18.3 canary version to prevent hydration issues
