@@ -20,6 +20,7 @@ Includes the following configuration:
 - Fly.io
 - GitHub Action for deployments
 - Remix Dev Tools
+- SVG Sprite Icons
 
 Portions of the setup were borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
 
