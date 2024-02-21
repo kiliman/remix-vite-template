@@ -3,8 +3,8 @@ import { Link } from '@remix-run/react'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
-    { name: 'description', content: 'Welcome to Remix!' },
+    { title: 'Remix+Vite' },
+    { name: 'description', content: 'Welcome to Remix+Vite!' },
   ]
 }
 
@@ -18,13 +18,23 @@ export default function Index() {
           alt="Remix Logo"
           className="h-12"
         />
-        <h1 className="text-5xl font-bold">Welcome to Remix</h1>
+        <h1 className="text-5xl font-bold">Welcome to Remix+Vite</h1>
       </div>
       <div className="p-8">
         <ul className="flex flex-col gap-2">
           <li>
             <Link to="/counter" className={linkStyle}>
               Counter
+            </Link>
+          </li>
+          <li>
+            <Link to="/error" className={linkStyle}>
+              Test Error Handling
+            </Link>
+          </li>
+          <li>
+            <Link to="/not-found" className={linkStyle}>
+              Not Found Page (Test Root Error Boundary)
             </Link>
           </li>
           <li>

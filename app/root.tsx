@@ -1,4 +1,5 @@
 import './tailwind.css'
+import { type LinksFunction } from '@remix-run/node'
 import {
   Links,
   Meta,
@@ -6,8 +7,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+import DefaultErrorBoundary from '~/components/ui/error-boundary'
+import iconsHref from '~/components/ui/icons/sprite.svg?url'
 
-export default function App() {
+export const links: LinksFunction = () => [
+  { rel: 'prefetch', href: iconsHref, as: 'image' },
+]
+
+function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -17,10 +24,34 @@ export default function App() {
         <Links />
       </head>
       <body suppressHydrationWarning>
-        <Outlet />
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
+  )
+}
+
+export default function App() {
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
+  )
+}
+
+export function ErrorBoundary() {
+  return (
+    <Layout>
+      <DefaultErrorBoundary />
+    </Layout>
+  )
+}
+
+export function HydrateFallback() {
+  return (
+    <Layout>
+      <h1>Loading...</h1>
+    </Layout>
   )
 }
