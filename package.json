@@ -29,9 +29,9 @@
     "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
-    "@remix-run/express": "^2.7.1",
-    "@remix-run/node": "^2.7.1",
-    "@remix-run/react": "^2.7.1",
+    "@remix-run/express": "^2.7.2",
+    "@remix-run/node": "^2.7.2",
+    "@remix-run/react": "^2.7.2",
     "chalk": "^5.3.0",
     "clsx": "^2.1.0",
     "cross-env": "^7.0.3",
@@ -47,9 +47,9 @@
   "devDependencies": {
     "@flydotio/dockerfile": "^0.5.2",
     "@playwright/test": "^1.41.2",
-    "@remix-run/dev": "^2.7.1",
-    "@remix-run/eslint-config": "^2.7.1",
-    "@remix-run/testing": "^2.7.1",
+    "@remix-run/dev": "^2.7.2",
+    "@remix-run/eslint-config": "^2.7.2",
+    "@remix-run/testing": "^2.7.2",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
