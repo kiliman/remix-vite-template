@@ -14,7 +14,7 @@ export const links: LinksFunction = () => [
   { rel: 'prefetch', href: iconsHref, as: 'image' },
 ]
 
-function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -33,25 +33,13 @@ function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return (
-    <Layout>
-      <Outlet />
-    </Layout>
-  )
+  return <Outlet />
 }
 
 export function ErrorBoundary() {
-  return (
-    <Layout>
-      <DefaultErrorBoundary />
-    </Layout>
-  )
+  return <DefaultErrorBoundary />
 }
 
 export function HydrateFallback() {
-  return (
-    <Layout>
-      <h1>Loading...</h1>
-    </Layout>
-  )
+  return <h1>Loading...</h1>
 }
