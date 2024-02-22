@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.5.1
+
+- 📦 Update to Remix v2.7.2
+- 🔨 Use new `<Layout>` export
+
 ## v1.5.0
 
 - 📦 Update to Remix v2.7.1 (first Vite stable support)
