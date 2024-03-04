@@ -8,7 +8,7 @@
 
 Includes the following configuration:
 
-- Remix v2.7 (first stable Vite release)
+- Remix v2.8
 - Vite v5.1
 - Prettier
 - ESlint
