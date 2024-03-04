@@ -14,7 +14,7 @@ export default function DefaultErrorBoundary() {
   return (
     <>
       <div className="m-2 rounded bg-red-100 p-4">
-        <h1 className="font-bolder mb-1 inline-flex items-center gap-4 text-2xl  text-red-900">
+        <h1 className="font-bolder mb-1 inline-flex items-center gap-4 text-2xl text-red-900">
           <Icon name="exclamation-circle" className="h-8 w-8" />
           {message || 'App Error'}
         </h1>
@@ -88,7 +88,7 @@ function BadRequest({
 }) {
   return (
     <div className="m-2 rounded bg-yellow-100 p-4">
-      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl  text-red-900">
+      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl text-red-900">
         <Icon name="exclamation-triangle" className="h-8 w-8" />
         {message || 'Bad Request'}
       </h1>
@@ -109,7 +109,7 @@ function BadRequest({
 function Invalid({ message, data }: { message: string; data: any }) {
   return (
     <div className="m-2 rounded bg-yellow-100 p-4">
-      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl  text-red-900">
+      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl text-red-900">
         <Icon name="exclamation-triangle" className="h-8 w-8" />
         {message || 'Invalid'}
       </h1>
@@ -121,7 +121,7 @@ function Invalid({ message, data }: { message: string; data: any }) {
 function Forbidden({ message, data }: { message: string; data: any }) {
   return (
     <div className="m-2 rounded bg-orange-100 p-4">
-      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl  text-orange-900">
+      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl text-orange-900">
         <Icon name="shield-exclamation" className="h-8 w-8" />
         {message || 'Not Authorized'}
       </h1>
@@ -135,7 +135,7 @@ function Forbidden({ message, data }: { message: string; data: any }) {
 function NotFound({ message, data }: { message: string; data: any }) {
   return (
     <div className="m-2 rounded bg-blue-100 p-4">
-      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl  text-blue-900">
+      <h1 className="font-bolder mb-1 inline-flex items-center gap-2 text-2xl text-blue-900">
         <Icon name="magnifying-glass" className="h-8 w-8" />
         {message || 'Not Found'}
       </h1>
