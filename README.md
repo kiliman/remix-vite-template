@@ -8,8 +8,8 @@
 
 Includes the following configuration:
 
-- Remix v2.6
-- Vite v5 (Remix unstable support)
+- Remix v2.8
+- Vite v5.1
 - Prettier
 - ESlint
 - React 18.3 canary version to prevent hydration issues
@@ -20,6 +20,8 @@ Includes the following configuration:
 - Fly.io
 - GitHub Action for deployments
 - Remix Dev Tools
+- SVG Sprite Icons
+- Default Error Boundary
 
 Portions of the setup were borrowed from [Epic Stack](https://github.com/epicweb-dev/epic-stack)
 
